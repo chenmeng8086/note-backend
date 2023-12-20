@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://39.99.244.38:3306/test_db?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: mysql123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-request-size: 100MB #设置总上传数据总大小
+      max-file-size: 20MB #设置单个文件最大长度
+file:
+#  location: D:/project/blog-backend/src/main/resources/images #自定义上传文件本地保存路径
+  location: /usr/local/nginx/html/images
